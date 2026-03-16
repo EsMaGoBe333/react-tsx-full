@@ -37,9 +37,8 @@ const Acordeon = () => {
         <h3>Aquí va el título</h3>
       </div>
       <div>
-```
+
 Aquí va el contenido
-```tsx
       </div>
     </div>
   )
@@ -175,26 +174,21 @@ altura del contenido para que se colapse o se expanda.
   border: 1px solid black;
   border-radius: 5px;
 }
-```
+
 .acordeon-heading {
-```tsx
   text-align: center;
   border-bottom: 2px solid black;
   cursor: pointer;
 }
-```
+
 .acordeon-content {
-```tsx
   overflow: hidden;
 }
-```
 .acordeon-content.cerrado {
-```tsx
   height: 0;
 }
-```
+
 .acordeon-content.abierto {
-```tsx
   height: auto;
   padding: 20px;
 }
@@ -254,9 +248,8 @@ const App = () => {
          <div>
            <h4>¿Que es React?</h4>
            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/300px-React.svg.png" alt="Logo de
-```
+
 React"/>
-```tsx
            <p>React es una librería de JS que permite pintar interfaces de usuario...</p>
          </div>
       </Acordeon>
