@@ -38,40 +38,31 @@ Empezaremos creando el siguiente archivo de estilos para que nuestro teclado no 
 cutre.
 
 **Archivo:** `/reactjs-estado-lab/src/style.css`
-
-.panel-codigo-secreto {
 ```tsx
+.panel-codigo-secreto {
   width: 150px;
   background-color: #242424;
 }
-```
 .display {
-```tsx
   height: 50px;
   font-size: 2rem;
   font-style: italic;
   color: #34e89e;
   text-align: right;
 }
-```
+
 .fila-teclas {
-```tsx
   display: flex;
 }
-```
 .tecla {
 background-color: transparent;
-
-```tsx
     color: #34e89e;
     border: 1px solid #34e89e;
     width: 100%;
     height: 50px;
     cursor: pointer;
 }
-```
 .tecla:hover {
-```tsx
   opacity: 0.6;
 }
 ```
@@ -335,9 +326,8 @@ class PanelCodigoSecreto extends Component {
       codigoActual: ''
     }
   }
-```
+
 handleClick(event) {
-```tsx
 const teclaPulsada = event.target.textContent;
 const { codigoActual, codigoSecreto } = this.state;
 
@@ -456,18 +446,17 @@ class PanelCodigoSecreto extends Component {
     }
     this.handleClick = this.handleClick.bind(this);
   }
-```
 handleClick(event) {
-```tsx
+
 const teclaPulsada = event.target.textContent;
 const { codigoActual, codigoSecreto } = this.state;
 
 if (teclaPulsada === 'CLD') {
 
 } else if (teclaPulsada === 'DEL') {
-```
+
 } else {
-```tsx
+
 if (codigoActual.length < 4) {
 
     }
@@ -683,9 +672,9 @@ class PanelCodigoSecreto extends Component {
     }
     this.handleClick = this.handleClick.bind(this);
 }
-```
+
 handleClick(event) {
-```tsx
+
 const teclaPulsada = event.target.textContent;
 const { codigoActual, codigoSecreto } = this.state;
 
@@ -694,9 +683,9 @@ if (teclaPulsada === 'CLD') {
   nuevoCodigoActual = ''
 } else if (teclaPulsada === 'DEL') {
   nuevoCodigoActual = codigoActual.slice(0, codigoActual.length-1);
-```
+
 } else {
-```tsx
+
   if (codigoActual.length < 4) {
     nuevoCodigoActual = codigoActual + teclaPulsada;
     if (nuevoCodigoActual === codigoSecreto) {
