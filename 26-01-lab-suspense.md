@@ -154,17 +154,13 @@ return (
   <div>
     <button type="button" onClick={() => setEsAdmin(!esAdmin)}>Toggle admin</button>
     {
-```
 esAdmin
 ?
-```tsx
 <Suspense fallback={<p>Loading...</p>}>
    <Admin />
 </Suspense>
-```
 :
 
-```tsx
             <Inicio />
           }
         </div>
