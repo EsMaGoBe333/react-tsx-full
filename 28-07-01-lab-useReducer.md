@@ -149,9 +149,8 @@ const Caja = () => {
 
 return (
   <div style={{width: '100px', height: '100px', backgroundColor: 'darkred', position: 'absolute', left: coords.posX,
-```
+
 top: coords.posY}}>
-```tsx
     </div>
   )
 }
@@ -199,9 +198,8 @@ const dispatchAction = (e) => {
 
 return (
   <div style={{width: '100px', height: '100px', backgroundColor: 'darkred', position: 'absolute', left: coords.posX,
-```
+
 top: coords.posY}}>
-```tsx
     </div>
   )
 }
